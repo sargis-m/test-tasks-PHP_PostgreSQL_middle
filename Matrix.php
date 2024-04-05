@@ -10,7 +10,15 @@ $matrix = [
     [16, 53, 1, 32]
 ];
 
-function neighborsSum($matrix, $rowIndex, $colIndex)
+/**
+ * Calculates the sum of neighboring elements in a matrix given the row and column indices.
+ *
+ * @param array $matrix A 2D array representing the matrix
+ * @param int $rowIndex The row index of the element
+ * @param int $colIndex The column index of the element
+ * @return int|float The sum of neighboring elements
+ */
+function neighborsSum(array $matrix, int $rowIndex, int $colIndex): int|float
 {
     $sum = 0;
     $left = $colIndex - 1;
